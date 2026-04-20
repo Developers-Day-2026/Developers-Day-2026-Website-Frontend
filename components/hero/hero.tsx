@@ -78,9 +78,9 @@ export default function Hero() {
               className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl  md:leading-none font-bold text-center
                         "
             >
-            {/* bg-gradient-to-r from-white via-white via-[45%] to-[#f07878] 
+              {/* bg-gradient-to-r from-white via-white via-[45%] to-[#f07878] 
             bg-clip-text text-transparent */}
-             
+
               DEVELOPER'S <br />
               DAY 2026
             </motion.h1>
@@ -131,15 +131,24 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.7, ease: "easeOut" }}
             className="flex flex-col w-full sm:w-auto sm:flex-row gap-4 mx-auto"
           >
-            <Button
-              as={Link}
-              href="/register"
-              className="outline-[#D41111] outline-2 bg-[#D41111] hover:bg-red-700 text-base text-white py-7 px-8 w-full sm:w-72"
-              radius="none"
-              endContent={<ArrowRightIcon className="w-5 h-5" />}
-            >
-              INITIALIZE_REGISTER
-            </Button>
+            {false ?
+              <Button
+                as={Link}
+                href="/register"
+                className="outline-[#D41111] outline-2 bg-[#D41111] hover:bg-red-700 text-base text-white py-7 px-8 w-full sm:w-72"
+                radius="none"
+                endContent={<ArrowRightIcon className="w-5 h-5" />}
+              >
+                INITIALIZE_REGISTER
+              </Button> :
+              <Button
+                isDisabled
+                className="outline-[#D41111] outline-2 bg-[#D41111] text-base text-white py-7 px-8 w-full sm:w-72 opacity-50"
+                radius="none"
+              >
+                REGISTRATION_CLOSED
+              </Button>
+            }
             <Button
               as={Link}
               href="/modules"

@@ -235,7 +235,8 @@ export default function CompetitionCard({
           className="font-bold tracking-widest text-sm justify-between px-5 bg-[var(--color,#2563EB)] hover:border hover:border-[var(--color,#2563EB)] hover:text-[var(--color,#2563EB)] hover:bg-transparent flex-shrink-0"
           endContent={capacityLimit <= 0 && earlyBirdLimit <= 0 ? undefined : <span className="text-lg font-bold">→</span>}
         >
-          {capacityLimit <= 0 && earlyBirdLimit <= 0 ? "COMPETITION FULL" : "REGISTER NOW"}
+          {/* {capacityLimit <= 0 && earlyBirdLimit <= 0 ? "COMPETITION FULL" : "REGISTER NOW"} */}
+          {capacityLimit <= 0 && earlyBirdLimit <= 0 ? "REGISTRATION CLOSED" : "REGISTER NOW"}
         </Button>
       </div>
     </motion.div>
