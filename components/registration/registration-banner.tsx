@@ -44,14 +44,22 @@ export default function RegistrationBanner() {
           transition={{ duration: 0.6, delay: 0.28, ease: "easeOut" }}
           className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
         >
-          <Button
+          {false ? <Button
             as={Link}
             href="/register"
             className="bg-black hover:bg-gray-900 text-white font-bold px-8 py-4 min-w-[230px] text-base"
             radius="none"
           >
             SECURE_ACCESS
-          </Button>
+          </Button> :
+            <Button
+              isDisabled
+              className="bg-black text-white font-bold px-8 py-4 min-w-[230px] text-base opacity-50 cursor-not-allowed"
+              radius="none"
+            >
+              REGISTRATION_CLOSED
+            </Button>
+          }
           <Button
             as={Link}
             href="/modules"

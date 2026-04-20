@@ -436,14 +436,23 @@ export default function AppNavbar() {
       {/* Register Button - Desktop */}
       <NavbarContent justify="end" className="hidden lg:flex">
         <NavbarItem>
-          <Button
-            as={Link}
-            href="/register"
-            className="bg-red-primary hover:bg-red-700 text-lg text-white font-bold gap-10 px-8"
-            radius="none"
-          >
-            REGISTER_NOW
-          </Button>
+          {false ?
+            <Button
+              as={Link}
+              href="/register"
+              className="bg-red-primary hover:bg-red-700 text-lg text-white font-bold gap-10 px-8"
+              radius="none"
+            >
+              REGISTER_NOW
+            </Button> :
+            <Button
+              isDisabled
+              className="bg-red-primary hover:bg-red-700 text-lg text-white font-bold gap-10 px-8"
+              radius="none"
+            >
+              REG_CLOSED  
+            </Button>
+          }
         </NavbarItem>
       </NavbarContent>
 
@@ -630,6 +639,7 @@ export default function AppNavbar() {
         })}
 
         <NavbarMenuItem className="w-full flex justify-center mt-4">
+          {false ?
           <Button
             as={Link}
             href="/register"
@@ -638,7 +648,15 @@ export default function AppNavbar() {
             onPress={() => setIsMenuOpen(false)}
           >
             REGISTER_NOW
+          </Button> :
+          <Button
+            isDisabled
+            className="bg-red-primary hover:bg-red-700 text-lg text-white font-bold px-8"
+            radius="none"
+          >
+            REG_CLOSED
           </Button>
+          }
         </NavbarMenuItem>
       </NavbarMenu>
     </Navbar>
