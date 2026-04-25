@@ -49,9 +49,9 @@ const modules = [
   { id: "dev-design", label: "Dev & Design", icon: ComputerDesktopIcon },
   { id: "coding", label: "Coding", icon: CodeBracketIcon },
   { id: "general", label: "General", icon: FlagIcon },
-  { id: "electrical-eng", label: "Electrical Eng", icon: BoltIcon },
+  // { id: "electrical-eng", label: "Electrical Eng", icon: BoltIcon },
   { id: "business", label: "Business", icon: PresentationChartBarIcon },
-  { id: "project-xtreme", label: "Project Xtreme", icon: Squares2X2Icon },
+  // { id: "project-xtreme", label: "Project Xtreme", icon: Squares2X2Icon },
 ];
 
 const eventDetailsItems = [
@@ -436,7 +436,7 @@ export default function AppNavbar() {
       {/* Register Button - Desktop */}
       <NavbarContent justify="end" className="hidden lg:flex">
         <NavbarItem>
-          {false ?
+          {true ?
             <Button
               as={Link}
               href="/register"
@@ -639,7 +639,7 @@ export default function AppNavbar() {
         })}
 
         <NavbarMenuItem className="w-full flex justify-center mt-4">
-          {false ?
+          {true ?
           <Button
             as={Link}
             href="/register"

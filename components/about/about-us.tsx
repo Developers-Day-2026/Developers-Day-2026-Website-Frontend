@@ -4,6 +4,7 @@ import StatCard from "./stat-card";
 import Image from "next/image";
 import { motion, useInView, useMotionValue, useTransform, animate } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import { fetchCompetitionsWithCategory } from "@/lib/api/competitions";
 
 function useCountAnimation(target: number, duration: number = 2, shouldStart: boolean = false) {
   const [count, setCount] = useState(0);
@@ -44,6 +45,26 @@ function AnimatedStat({ stat }: { stat: string }) {
 }
 
 export default function AboutUs() {
+  const [competitionCount, setCompetitionCount] = useState<number | null>(null);
+
+  useEffect(() => {
+    let isMounted = true;
+    (async () => {
+      try {
+        const data = await fetchCompetitionsWithCategory();
+        if (!isMounted) return;
+        setCompetitionCount(data.length);
+      } catch (e) {
+        // leave as null to fall back to hardcoded value
+        if (!isMounted) return;
+        setCompetitionCount(null);
+      }
+    })();
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
   const stats = [
     {
       stat: "4500+",
@@ -59,7 +80,7 @@ export default function AboutUs() {
       variant: "red" as const,
     },
     {
-      stat: "25+",
+      stat: competitionCount !== null ? `${competitionCount}+` : "25+",
       title: "COMPETITION TRACKS",
       icon: (
         <Image

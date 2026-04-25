@@ -71,17 +71,17 @@ const modules = [
         color: "#949494",
         bgColor: "#070707",
     },
-    {
-        id: "electrical-eng",
-        icon: "/icons/electrical.svg",
-        title: "ELECTRICAL ENG._COMPETITIONS",
-        categoryDescription: [
-            "CIRCUITS LIVE. MOTORS ROAR. ROBOTS COLLIDE.",
-            "ENGINEER. BUILD. BATTLE. LET YOUR MACHINE DO THE TALKING."
-        ],
-        color: "#D35400",
-        bgColor: "#0A0400",
-    },
+    // {
+    //     id: "electrical-eng",
+    //     icon: "/icons/electrical.svg",
+    //     title: "ELECTRICAL ENG._COMPETITIONS",
+    //     categoryDescription: [
+    //         "CIRCUITS LIVE. MOTORS ROAR. ROBOTS COLLIDE.",
+    //         "ENGINEER. BUILD. BATTLE. LET YOUR MACHINE DO THE TALKING."
+    //     ],
+    //     color: "#D35400",
+    //     bgColor: "#0A0400",
+    // },
     {
         id: "business",
         icon: "/icons/business.svg",
