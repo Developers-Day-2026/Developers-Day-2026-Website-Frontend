@@ -51,7 +51,7 @@ const modules = [
   { id: "general", label: "General", icon: FlagIcon },
   { id: "electrical-eng", label: "Electrical Eng", icon: BoltIcon },
   { id: "business", label: "Business", icon: PresentationChartBarIcon },
-  { id: "project-xtreme", label: "Project Xtreme", icon: Squares2X2Icon },
+  // { id: "project-xtreme", label: "Project Xtreme", icon: Squares2X2Icon },
 ];
 
 const eventDetailsItems = [

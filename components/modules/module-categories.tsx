@@ -93,6 +93,7 @@ export default function ModuleCategories() {
       code: "C_08",
       url: "/modules/business",
     },
+    /*
     {
       id: "project-xtreme",
       icon: (
@@ -117,6 +118,7 @@ export default function ModuleCategories() {
       code: "C_09",
       url: "/modules/project-xtreme",
     },
+  */
   ];
 
   return (
