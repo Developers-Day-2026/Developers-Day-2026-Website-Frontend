@@ -147,7 +147,17 @@ export default function CompetitionCard({
       <div className="p-8 flex flex-col gap-4 flex-1">
         <p className="text-[#CBD5E1] text-sm leading-6 flex-1">{description}</p>
 
-        {['Guilty By Data', 'Today We are VibeCoding', 'Design Arena By WebApp Fusion'].includes(title) && (
+        {[
+          'Guilty By Data',
+          'Today We are VibeCoding',
+          'Design Arena By WebApp Fusion',
+          'Competitive Programming',
+          'AI Got Talent',
+          'Code Sprint',
+          'Debug Relay',
+          'Prompt Prognosis',
+          'SysCore',
+        ].includes(title) && (
           <div className="">
             <div className="flex items-center gap-2">
               <InformationCircleIcon className="w-4 h-4 text-[var(--color,#2563EB)]" />
