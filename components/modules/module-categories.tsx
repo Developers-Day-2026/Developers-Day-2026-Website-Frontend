@@ -75,6 +75,7 @@ export default function ModuleCategories() {
       code: "C_06",
       url: "/modules/general",
     },
+    /*
     {
       id: "electrical-eng",
       icon: <Image src="/icons/electrical.svg" alt="AI" width={32} height={32} />,
@@ -84,6 +85,7 @@ export default function ModuleCategories() {
       code: "C_07",
       url: "/modules/electrical-eng",
     },
+    */
     {
       id: "business",
       icon: <Image src="/icons/business.svg" alt="AI" width={32} height={32} />,

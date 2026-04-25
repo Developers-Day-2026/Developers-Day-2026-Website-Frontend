@@ -49,7 +49,7 @@ const modules = [
   { id: "dev-design", label: "Dev & Design", icon: ComputerDesktopIcon },
   { id: "coding", label: "Coding", icon: CodeBracketIcon },
   { id: "general", label: "General", icon: FlagIcon },
-  { id: "electrical-eng", label: "Electrical Eng", icon: BoltIcon },
+  // { id: "electrical-eng", label: "Electrical Eng", icon: BoltIcon },
   { id: "business", label: "Business", icon: PresentationChartBarIcon },
   // { id: "project-xtreme", label: "Project Xtreme", icon: Squares2X2Icon },
 ];
