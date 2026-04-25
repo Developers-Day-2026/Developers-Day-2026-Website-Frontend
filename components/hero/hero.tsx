@@ -131,7 +131,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.7, ease: "easeOut" }}
             className="flex flex-col w-full sm:w-auto sm:flex-row gap-4 mx-auto"
           >
-            {false ?
+            {true ?
               <Button
                 as={Link}
                 href="/register"

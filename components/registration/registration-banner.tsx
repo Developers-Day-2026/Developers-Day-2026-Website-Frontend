@@ -44,7 +44,7 @@ export default function RegistrationBanner() {
           transition={{ duration: 0.6, delay: 0.28, ease: "easeOut" }}
           className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
         >
-          {false ? <Button
+          {true ? <Button
             as={Link}
             href="/register"
             className="bg-black hover:bg-gray-900 text-white font-bold px-8 py-4 min-w-[230px] text-base"
