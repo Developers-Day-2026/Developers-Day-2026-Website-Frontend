@@ -18,25 +18,25 @@ export default function PaymentDetails() {
                 <div className="flex justify-between gap-4">
                     <span className="text-gray-500">BANK: </span>
                     <span className="text-white font-medium text-right">
-                        AL_HABIB_LIMITED
+                        MEEZAN_BANK    
                     </span>
                 </div>
                 <div className="flex justify-between gap-4">
                     <span className="text-gray-500">ACCOUNT_TITLE: </span>
                     <span className="text-white font-medium text-right">
-                        NEHA_AAMIR
+                        MUHAMMAD_HASNAIN
                     </span>
                 </div>
                 <div className="flex justify-between gap-4">
                     <span className="text-gray-500">ACCOUNT_NO: </span>
                     <span className="text-white font-medium text-right">
-                        5017-1860-010439-01-4
+                        16810110323582
                     </span>
                 </div>
                 <div className="flex justify-between gap-4">
                     <span className="text-gray-500">IBAN: </span>
                     <span className="text-white font-medium text-right">
-                        PK85BAHL5017186001043901
+                        PK14MEZN0016810110323582
                     </span>
                 </div>
             </div>
