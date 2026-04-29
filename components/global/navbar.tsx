@@ -436,7 +436,7 @@ export default function AppNavbar() {
       {/* Register Button - Desktop */}
       <NavbarContent justify="end" className="hidden lg:flex">
         <NavbarItem>
-          {true ?
+          {false ?
             <Button
               as={Link}
               href="/register"
@@ -639,7 +639,7 @@ export default function AppNavbar() {
         })}
 
         <NavbarMenuItem className="w-full flex justify-center mt-4">
-          {true ?
+          {false ?
           <Button
             as={Link}
             href="/register"
